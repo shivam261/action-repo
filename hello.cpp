@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std; 
-
+int product(int a,int b){
+    return a*b;
+}
 int main (){
 
     cout<<"hello from main branch";
@@ -11,7 +13,6 @@ int main (){
 
 return 1;
 }
-
-int sum(){
-    return 0;
+int sum(int a){
+    return a+1;
 }
