@@ -8,7 +8,7 @@ int main (){
     cout<<"hello from main branch";
     cout<<"from feature 2";
     cout<<"hello from feaure 2";
-
+cout << "added new files in main branch to view in feature 2  ";
 
 
 return 1;
