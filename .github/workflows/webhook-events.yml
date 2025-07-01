@@ -13,7 +13,7 @@ jobs:
         run: |
           TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
 
-          curl -X POST https://your-webhook-repo-server.com/webhook \
+          curl -X POST https://web-production-7583.up.railway.app/webhook \
             -H "Content-Type: application/json" \
             -d '{
               "event": "${{ github.event_name }}",
