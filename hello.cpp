@@ -12,7 +12,8 @@ int main (){
     cout<<"hello from feaure 2";
 // so. my name is john cen a form seven heave that also i am king of this jungle 
 // i am here to rule the world 
-cout << "added new files in main branch to view in feature 2  ";
+
+    cout << "added new files in main branch to view in feature 2  ";
 
 
 return 1;
