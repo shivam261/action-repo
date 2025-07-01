@@ -1,0 +1,24 @@
+name: Send Webhook Event
+
+on:
+  push:          # Triggers on push to any branch
+  pull_request:
+    types: [opened, synchronize, closed]
+
+jobs:
+  send-webhook:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Webhook for push/pull/merge
+        run: |
+          echo "Triggering webhook for ${{ github.event_name }}"
+          curl -X POST https://your-webhook-endpoint.com/webhook \
+            -H "Content-Type: application/json" \
+            -d '{
+              "event": "${{ github.event_name }}",
+              "repository": "${{ github.repository }}",
+              "sender": "${{ github.actor }}",
+              "commit": "${{ github.sha }}",
+              "ref": "${{ github.ref }}",
+              "action": "${{ github.event.action }}"
+            }'
