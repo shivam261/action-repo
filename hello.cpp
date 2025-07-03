@@ -6,8 +6,9 @@ int product(int a,int b){
 }
 int main (){
     // remem ber the anme he is kohn cena
-
+    // hi from unkown
     cout<<"hello from main branch";
+    cout <<" bye";
     cout<<"from feature 2";
     cout<<"hello from feaure 2";
 // so. my name is john cen a form seven heave that also i am king of this jungle 
@@ -20,5 +21,5 @@ return 1;
 }
 int sum(int a){
     // this function work is to incremtn the numbe by one or dependin
-    return a+1;
+    return a+1; 
 }
